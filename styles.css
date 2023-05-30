@@ -1,0 +1,205 @@
+:root {
+    --ancho-tabla: 90vw;
+    --ancho-uno: 10vw;
+    --ancho-dos: 20vw;
+    --altura-uno: 1.5vw;
+    --altura-dos: 4.5vw;
+    --borde-panel: 1px solid black;
+    --borde-blanco: 1px solid white;
+    --ancho-de-columnas: repeat(2, 10vw) 20vw 20vw repeat(3, 10vw);
+    --tipografia1: sans-serif;
+    --fontSize-texto-generado: 1.2vw;
+    --fontSize-nombreColumnas: 1.1vw;
+    --ancho-tabla-resultados: 35vw;
+    --alto-fila-resultados: 15vw;
+}
+
+body {
+    background-color: #eee;
+    height: 100%;
+}
+
+h1 {
+    font-size: 2.5vw; 
+    font-family: var(--tipografia1);
+}
+
+.logoGE {
+    width: 8vw;
+}
+
+.logoTecnet {
+    width: 8vw;
+}
+
+.logoYPF {
+    width: 20vw;
+}
+
+#contenedor-botones {
+    display:flex;
+    flex-flow: row wrap;
+    margin: auto;
+    justify-content: space-between;    
+    width: var(--ancho-tabla);
+}
+
+#contenedor-titulo-logos {
+    position: relative;
+    display: grid;
+    width: var(--ancho-tabla);
+    margin: auto;
+    grid-auto-rows: minmax(4vw, auto);
+    top: 2vw;
+}
+
+#fila-titulo-logos {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    font-family: var(--tipografia1);
+}
+
+#contenedor-nombreColumnas {
+    position: relative;
+    display: grid;
+    text-align: center;
+    font-family: var(--tipografia1);
+    grid-template-columns: var(--ancho-de-columnas);
+    background-color: #ccf;
+}
+
+.nombreColumnas {
+    display: grid;
+    place-items: center;   
+    font-size: var(--fontSize-nombreColumnas);
+    font-weight: bold;
+    border: 1px solid black;    
+}
+
+.contenedor-textoGenerado-general {
+    display: grid;
+    grid-template-columns: var(--ancho-de-columnas);
+}
+
+.panelConBorde {
+    border: var(--borde-panel);
+}
+
+.bordeSupInfBlanco {
+    border-top: var(--borde-blanco);
+    border-bottom: var(--borde-blanco);
+}
+
+.alturaBaja {
+    height: var(--altura-uno);
+}
+
+.alturaAlta {
+    height: var(--altura-dos);
+}
+
+.anchoCorto {
+    width: var(--ancho-uno);
+}
+
+.anchoLargo {
+    width: var(--ancho-dos);
+}
+
+.textoGenerado {
+    display: grid;
+    font-size: var(--fontSize-texto-generado);
+    font-family: var(--tipografia1);
+    /* margin-bottom: 0.3vw; */
+    margin-left: 1vw;
+}
+
+.oculto {
+    visibility: hidden;
+    display: none;
+}
+
+#tablaDeResultados {
+    display: grid;
+    position: relative;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, 5vw);
+    background-color: #ccf;
+    width: var(--ancho-tabla-resultados);
+    height: var(--alto-fila-resultados);
+}
+
+.alinearVertical {
+    position: relative;
+    display: grid;
+    text-align: center; 
+    align-content: center;
+}
+
+.alinearAmbos {
+    display: grid;
+    place-items: center;
+}
+
+.titulo3 {
+    font-size: 1.3vw;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+#buttonContainer {
+    position: relative;
+    display:flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+.botonReporte {
+    background-color: #ccf;
+    font-size: 1.3vw;
+    height: 4vw;
+    width: 12vw;
+    border-top-right-radius: 1vw;   
+    border-top-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+}
+
+.botonReporte:hover {
+    background-color: #77f;
+}
+
+.graficoContainer {
+    width: 90%;
+    margin-left: 5vw;
+    margin-top: 3vw;
+}
+
+.contenedorResultados {
+    display:flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+    width: 60vw;
+    margin-left: 20vw; 
+    margin-top: 3vw;
+}
+
+.pieChartContainer {
+    /* margin-top: 3vw;
+    margin-bottom: 3vw; */
+    width: 70%;
+}
+
+.bar:hover {
+    fill: blue;
+}
+
+.xAxis, .yAxis {
+    font-size: 1vw;
+}

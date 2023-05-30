@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+
+    <title>Reporte de capacitacion</title>
+</head>
+
+<body id="body">
+    <div id="contenedor-botones">
+        <!-- <input type="file" id="file-input"> -->
+    
+        <div id="buttonContainer" class="oculto">
+            <button id="reporteGeneral" class="botonReporte">Reporte General</button>
+            <button id="reporteFoundational" class="botonReporte">Reporte Foundational</button>
+            <button id="reporteIntermediate" class="botonReporte">Reporte Intermediate</button>
+            <button id="reporteAdvanced" class="botonReporte">Reporte Advanced</button>
+        </div>
+    </div>
+    
+
+    <div id="contenedor-titulo-logos">
+        <div id="fila-titulo-logos">
+            <img src="img/LogoGE.png" class="logoGE" alt="Logo de GE">
+            <img src="img/LogoTecnet.png" class="logoTecnet" alt="Logo de Tecnet">
+            <h1>Reporte General de Capacitacion</h1>
+            <img src="img/LogoYPF.png" class="logoYPF" alt="Logo de YPF">
+        </div>
+        
+        <div id="contenedor-nombreColumnas">
+            <div id="firstName" class="nombreColumnas">First Name</div>
+            <div id="lastName" class="nombreColumnas">Last Name</div>
+            <div id="email" class="nombreColumnas">Correo Electrónico</div>
+            <div id="curriculum" class="nombreColumnas">Curriculum - iFIX & Historian</div>
+            <div id="coursesCompleted" class="nombreColumnas">Cursos Completados</div>
+            <div id="coursesCurriculum" class="nombreColumnas">Cursos en curricula</div>
+            <div id="coursesCompleted" class="nombreColumnas">Cursos Completados (%)</div>
+        </div>
+
+        <div id="contenedor-textoGenerado" class="contenedor-textoGenerado-general"></div>
+    </div>
+
+    <div id="contenedorResultados" class="oculto">
+        <div id="tablaDeResultados" class="oculto">
+            <div class="alinearVertical titulo3">Total de inscriptos</div>
+            <div id="totalInscriptos" class="alinearAmbos titulo3"></div>
+            
+            <div class="alinearVertical titulo3">Con al menos un curso realizado</div>
+            <div id="alMenosUnCurso" class="alinearAmbos titulo3"></div>
+            
+            <div class="alinearVertical titulo3">Ningun curso realizado</div>
+            <div id="ningunCurso" class="alinearAmbos titulo3"></div>
+       </div> 
+
+       <div id="pieChartContainer" class="oculto"></div>
+    </div>
+
+    <div id="graficoContainer" class="oculto"></div>
+        
+    <script src="./d3.v7.min.js"></script>    
+    <script src="./main.js"></script>
+    <script src="./estadisticasGenerales.js"></script>
+    <script src="./crearFilas.js"></script>
+    <script src="./GraficoDeBarras.js"></script>
+    <script src="./GraficoDeTorta.js"></script>
+    <script src="./reporte.json"></script>
+    
+    
+</body>
+</html>
