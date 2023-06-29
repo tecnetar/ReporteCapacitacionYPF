@@ -19,6 +19,11 @@ let filteredData
 let sortedData
 let arrayNombresConCursos;
 let tipoDeReporte = "ReporteGeneral";
+let mesesArray = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+let objetoDate = new Date();
+let mesActual = objetoDate.getMonth();
+let anioActual = objetoDate.getFullYear();
+
 
 fetch('reporte.json')
   .then(response => response.json())
@@ -149,7 +154,7 @@ function ocultarCanvasContainer() {
 }
 
 function cambiarTituloGeneral() {
-  document.querySelector("h1").textContent = "Reporte General de Capacitacion"
+  document.querySelector("h1").textContent = "Reporte General de Capacitacion " + mesesArray[mesActual] + " " + anioActual;
 }
 
 function cambiarTituloFoundational() {
