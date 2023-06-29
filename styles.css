@@ -6,7 +6,8 @@
     --altura-dos: 4.5vw;
     --borde-panel: 1px solid black;
     --borde-blanco: 1px solid white;
-    --ancho-de-columnas: repeat(2, 10vw) 20vw 20vw repeat(3, 10vw);
+    --ancho-fila-titulo-logos: repeat(2, 10vw) 50vw 20vw;
+    --ancho-de-columnas: repeat(2, 10vw) 20vw 20vw repeat(3, 10vw);    
     --tipografia1: sans-serif;
     --fontSize-texto-generado: 1.2vw;
     --fontSize-nombreColumnas: 1.1vw;
@@ -20,7 +21,7 @@ body {
 }
 
 h1 {
-    font-size: 2.5vw; 
+    font-size: 2.2vw; 
     font-family: var(--tipografia1);
 }
 
@@ -54,16 +55,21 @@ h1 {
 }
 
 #fila-titulo-logos {
-    display:flex;
+    /* display:flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; */
+    
+    display: grid;
+    grid-template-columns: var(--ancho-fila-titulo-logos);
+    /* width: var(--ancho-tabla); */
+    /* align-items: center;     */
+    place-items: center;
     border: 1px solid black;
     font-family: var(--tipografia1);
 }
 
 #contenedor-nombreColumnas {
-    position: relative;
+    /* position: relative; */
     display: grid;
     text-align: center;
     font-family: var(--tipografia1);
