@@ -33,7 +33,7 @@ fetch('reporte.json')
     jsonData = [...data];
 
     // Quito el último elemento porque desde GE viene con los valores en blanco
-    jsonData.pop();
+    // jsonData.pop();
 
     filterNonYpfPeople();
     ordenarAlfabeticamente();
