@@ -16,9 +16,13 @@ const $reporteAdvanced = document.getElementById("reporteAdvanced");
 const $reporteInstructor = document.getElementById("reporteInstructor");
 
 let jsonData;
-let jsonDataILT;
 let filteredData;
 let sortedData;
+
+let jsonDataILT;
+let filteredDataILT;
+let sortedDataILT;
+
 let arrayNombresConCursos;
 let tipoDeReporte = "ReporteGeneral";
 let mesesArray = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
@@ -58,7 +62,11 @@ fetch('reporte.json')
     // Asigno (copio) el JSON a un array para poder manipularlo como hacía antes con el input del usuario
     jsonDataILT = [...data]
 
-    console.log(jsonDataILT);
+     // Manipular el JSON
+     filteredDataILT = filterNonYpfPeople(jsonDataILT);
+     sortedDataILT = ordenarAlfabeticamente(filteredDataILT);
+
+    console.log(sortedDataILT);
   })
 
 function filterNonYpfPeople(argumento) {
