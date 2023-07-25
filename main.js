@@ -144,7 +144,7 @@ $reporteInstructor.onclick = function () {
   borrarCanvasAnterior();
   // mostrarCanvasContainer();
   tipoDeReporte = "curriculaFiltrada";
-  // generarReporteAdvanced(sortedData);
+  generarReporteILT(sortedDataILT);
 }
 
 function mostrarBotones() {
@@ -228,6 +228,10 @@ function generarReporteAdvanced(sortedData) {
   const tier3Filter = sortedData.filter(elem => elem["Curriculum/Series Title"] == "YPF Tier 3 - iFIX & Historian (Advanced)")
     .filter(elem => elem["Completed Courses"] > 0);
 
-  crearFilas(tier3Filter, tipoDeReporte)
+  crearFilas(tier3Filter, tipoDeReporte);
   crearGraficoDeBarras(tier3Filter);
+}
+
+function generarReporteILT(sortedDataILT) {
+  crearFilasILT(sortedDataILT);
 }
