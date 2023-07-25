@@ -31,13 +31,13 @@ function crearFilasILT(jsonFiltrado) {
         $courseName.className = "textoGenerado";
 
         // Limpiar el texto del nombre de curricula
-        // const regex1 = /YPF |iFIX & Historian|[(]|[)]/g;
-        // const nuevoCurriculum = element["Curriculum/Series Title"].replace(regex1, "");
+        const regex1 = /ILA Group|ILA Argentina|[ - ]|Private /g;
+        const nuevoCourseName = element["Course Name"].replace(regex1, "");
 
         $firstName.innerText = element["First Name"];
         $lastName.innerText = element["Last name"];
         $email.innerText = element["Email"];
-        $courseName.innerText = "Nombre del curso";
+        $courseName.innerText = nuevoCourseName;
         
         // Agrego los contenedores al elemento padre que es el que tiene ID contenedor-textoGenerado
         $contenedorTextoGenerado.appendChild($panelFirstName);
