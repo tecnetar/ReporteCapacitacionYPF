@@ -110,11 +110,11 @@ h1 {
     height: var(--altura-dos);
 }
 
-.anchoCorto {
+.anchoUno {
     width: var(--ancho-uno);
 }
 
-.anchoLargo {
+.anchoDos {
     width: var(--ancho-dos);
 }
 
