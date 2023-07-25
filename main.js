@@ -37,7 +37,7 @@ fetch('reporte.json')
     // Quito el último elemento porque desde GE viene con los valores en blanco
     // jsonData.pop();
 
-    filterNonYpfPeople();
+    filteredData = filterNonYpfPeople(jsonData);
     ordenarAlfabeticamente();
     replaceWithZero();
 
@@ -62,9 +62,9 @@ fetch('reporte.json')
     console.log(jsonDataILT);
   })
 
-function filterNonYpfPeople() {
+function filterNonYpfPeople(argumento) {
   // Quitar los elementos que no pertenezcan a YPF
-  filteredData = jsonData.filter(elem =>
+  return argumento.filter(elem =>
     elem["Email"] != "marcos.perez@ilagroup.com" &&
     elem["Email"] != "ml.shiroma@tecnet-ibermatica.com.ar" &&
     elem["Email"] != "TEST@ypftest.comx")
