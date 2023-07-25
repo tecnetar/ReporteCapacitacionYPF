@@ -34,10 +34,12 @@ fetch('reporte.json')
     // Asigno (copio) el JSON a un array para poder manipularlo como hacía antes con el input del usuario
     jsonData = [...data];
 
+    // Manipular el JSON
     filteredData = filterNonYpfPeople(jsonData);
     sortedData = ordenarAlfabeticamente(filteredData);
-    replaceWithZero();
+    replaceWithZero(sortedData);
 
+    // Resetear las listas generadas y diseños en pantalla
     borrarLista();
     borrarResultados();
     cambiarTituloGeneral();
@@ -80,10 +82,10 @@ function ordenarAlfabeticamente(argumento) {
   })
 }
 
-let replaceWithZero = function () {
+let replaceWithZero = function (argumento) {
   // Agregar un cero a los campos vacíos de "Cursos Completados"
   // No lo hago en el forEach para no recargar cada función y que sea legible a futuro
-  sortedData.map(elem => elem["Completed Courses"] == "" ? elem["Completed Courses"] = 0 : elem)
+  argumento.map(elem => elem["Completed Courses"] == "" ? elem["Completed Courses"] = 0 : elem)
 }
 
 
