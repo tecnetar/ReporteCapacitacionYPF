@@ -34,11 +34,8 @@ fetch('reporte.json')
     // Asigno (copio) el JSON a un array para poder manipularlo como hacía antes con el input del usuario
     jsonData = [...data];
 
-    // Quito el último elemento porque desde GE viene con los valores en blanco
-    // jsonData.pop();
-
     filteredData = filterNonYpfPeople(jsonData);
-    ordenarAlfabeticamente();
+    sortedData = ordenarAlfabeticamente(filteredData);
     replaceWithZero();
 
     borrarLista();
@@ -70,9 +67,9 @@ function filterNonYpfPeople(argumento) {
     elem["Email"] != "TEST@ypftest.comx")
 }
 
-function ordenarAlfabeticamente() {
+function ordenarAlfabeticamente(argumento) {
   // Ordenar alfabeticamente
-  sortedData = filteredData.sort(function (elemA, elemB) {
+  return argumento.sort(function (elemA, elemB) {
     if (elemA["First Name"] < elemB["First Name"]) {
       return -1;
     }
