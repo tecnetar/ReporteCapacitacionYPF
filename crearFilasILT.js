@@ -19,10 +19,10 @@ function crearFilasILT(jsonFiltrado) {
         const $courseName = document.createElement("div");
 
         // Asigno la clase a los contenedores de texto
-        $panelFirstName.className = "panelConBorde anchoCorto alturaBaja";
-        $panelLastName.className = "panelConBorde anchoCorto alturaBaja";
-        $panelEmail.className = "panelConBorde anchoLargo alturaBaja";
-        $panelCourseName.className = "panelConBorde anchoLargo alturaBaja";
+        $panelFirstName.className = "panelConBorde anchoUno alturaBaja";
+        $panelLastName.className = "panelConBorde anchoUno alturaBaja";
+        $panelEmail.className = "panelConBorde anchoDos alturaBaja";
+        $panelCourseName.className = "panelConBorde anchoDos alturaBaja";
 
         // Asigno la clase a los textos
         $firstName.className = "textoGenerado";
