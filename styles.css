@@ -2,6 +2,7 @@
     --ancho-tabla: 90vw;
     --ancho-uno: 10vw;
     --ancho-dos: 20vw;
+    --ancho-tres: 30vw;
     --altura-uno: 1.5vw;
     --altura-dos: 4.5vw;
     --borde-panel: 1px solid black;
@@ -116,6 +117,10 @@ h1 {
 
 .anchoDos {
     width: var(--ancho-dos);
+}
+
+.anchoTres {
+    width: var(--ancho-tres);
 }
 
 .textoGenerado {
