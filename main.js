@@ -13,10 +13,12 @@ const $reporteGeneral = document.getElementById("reporteGeneral");
 const $reporteFoundational = document.getElementById("reporteFoundational");
 const $reporteIntermediate = document.getElementById("reporteIntermediate");
 const $reporteAdvanced = document.getElementById("reporteAdvanced");
+const $reporteInstructor = document.getElementById("reporteInstructor");
 
-let jsonData
-let filteredData
-let sortedData
+let jsonData;
+let jsonDataILT;
+let filteredData;
+let sortedData;
 let arrayNombresConCursos;
 let tipoDeReporte = "ReporteGeneral";
 let mesesArray = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
@@ -47,6 +49,17 @@ fetch('reporte.json')
     mostrarBotones();
     generarReporteGeneral(sortedData);
 
+  })
+
+
+  fetch('reporteILT.json')
+  .then(response => response.json())
+  .then(data => {
+    
+    // Asigno (copio) el JSON a un array para poder manipularlo como hacía antes con el input del usuario
+    jsonDataILT = [...data]
+
+    console.log(jsonDataILT);
   })
 
 function filterNonYpfPeople() {
@@ -117,6 +130,16 @@ $reporteAdvanced.onclick = function () {
   generarReporteAdvanced(sortedData);
 }
 
+$reporteInstructor.onclick = function () {
+  borrarLista();
+  borrarResultados();
+  cambiarTituloInstructor();
+  borrarCanvasAnterior();
+  // mostrarCanvasContainer();
+  tipoDeReporte = "curriculaFiltrada";
+  // generarReporteAdvanced(sortedData);
+}
+
 function mostrarBotones() {
   $buttonContainer.className = "";
 }
@@ -167,6 +190,10 @@ function cambiarTituloIntermediate() {
 
 function cambiarTituloAdvanced() {
   document.querySelector("h1").textContent = "Avance de Capacitacion Advanced"
+}
+
+function cambiarTituloInstructor() {
+  document.querySelector("h1").textContent = "Avance de Capacitacion con Instructor"
 }
 
 function generarReporteGeneral(sortedData) {
