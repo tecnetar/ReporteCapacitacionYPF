@@ -10,7 +10,7 @@
     --fila-botones: repeat(5, 12vw);
     --ancho-fila-titulo-logos: repeat(2, 10vw) 50vw 20vw;
     --ancho-de-columnas: repeat(2, 10vw) 20vw 20vw repeat(3, 10vw);    
-    --ancho-de-columnas-ILT: repeat(2, 10vw) 20vw 20vw repeat(2, 15vw);
+    --ancho-de-columnas-ILT: repeat(2, 10vw) 20vw 30vw repeat(2, 10vw);
     --tipografia1: sans-serif;
     --fontSize-texto-generado: 1.2vw;
     --fontSize-nombreColumnas: 1.1vw;
@@ -73,12 +73,19 @@ h1 {
     font-family: var(--tipografia1);
 }
 
-#contenedor-nombreColumnas {
-    /* position: relative; */
+.contenedor-nombreColumnas {
     display: grid;
     text-align: center;
     font-family: var(--tipografia1);
     grid-template-columns: var(--ancho-de-columnas);
+    background-color: #ccf;
+}
+
+.contenedor-nombreColumnas-ILT {
+    display: grid;
+    text-align: center;
+    font-family: var(--tipografia1);
+    grid-template-columns: var(--ancho-de-columnas-ILT);
     background-color: #ccf;
 }
 
@@ -97,7 +104,7 @@ h1 {
 
 .contenedor-textoGenerado-ILT {
     display: grid;
-    grid-template-columns: var(--ancho-de-columnas2);
+    grid-template-columns: var(--ancho-de-columnas-ILT);
 }
 
 .panelConBorde {
