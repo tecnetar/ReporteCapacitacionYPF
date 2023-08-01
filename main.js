@@ -4,6 +4,12 @@ const $alMenosUno = document.getElementById("alMenosUnCurso");
 const $ningunCurso = document.getElementById("ningunCurso");
 const $tablaDeResultados = document.getElementById("tablaDeResultados");
 
+const $coursesCompleted1 = document.getElementById("coursesCompleted1");
+const $coursesCurriculum = document.getElementById("coursesCurriculum");
+const $coursesCompleted2 = document.getElementById("coursesCompleted2");
+const $startDate = document.getElementById("startDate");
+const $endDate = document.getElementById("endDate");
+
 const $contenedorResultados = document.getElementById("contenedorResultados")
 const $graficoContainer = document.getElementById("graficoContainer");
 const $pieChartContainer = document.getElementById("pieChartContainer")
@@ -103,6 +109,7 @@ $reporteGeneral.onclick = function () {
   cambiarTituloGeneral();
   borrarCanvasAnterior();
   ocultarCanvasContainer();
+  cambiarAColumnasNormales()
   tipoDeReporte = "ReporteGeneral";
   generarReporteGeneral(sortedData);
 }
@@ -113,6 +120,7 @@ $reporteFoundational.onclick = function () {
   cambiarTituloFoundational();
   borrarCanvasAnterior();
   mostrarCanvasContainer();
+  cambiarAColumnasNormales()
   tipoDeReporte = "curriculaFiltrada";
   generarReporteFoundational(sortedData);
 }
@@ -123,6 +131,7 @@ $reporteIntermediate.onclick = function () {
   cambiarTituloIntermediate();
   borrarCanvasAnterior();
   mostrarCanvasContainer();
+  cambiarAColumnasNormales()
   tipoDeReporte = "curriculaFiltrada";
   generarReporteIntermediate(sortedData);
 }
@@ -133,6 +142,7 @@ $reporteAdvanced.onclick = function () {
   cambiarTituloAdvanced();
   borrarCanvasAnterior();
   mostrarCanvasContainer();
+  cambiarAColumnasNormales()
   tipoDeReporte = "curriculaFiltrada";
   generarReporteAdvanced(sortedData);
 }
@@ -142,6 +152,7 @@ $reporteInstructor.onclick = function () {
   borrarResultados();
   cambiarTituloInstructor();
   borrarCanvasAnterior();
+  cambiarAColumnasILT()
   // mostrarCanvasContainer();
   tipoDeReporte = "curriculaFiltrada";
   generarReporteILT(sortedDataILT);
@@ -181,6 +192,27 @@ function mostrarCanvasContainer() {
 function ocultarCanvasContainer() {
   $graficoContainer.className = "oculto";
   $pieChartContainer.className = "oculto";
+}
+
+function cambiarAColumnasNormales() {
+  $coursesCompleted1.className = "nombreColumnas";
+  $coursesCurriculum.className = "nombreColumnas";
+  $coursesCompleted2.className = "nombreColumnas";
+
+  $startDate.className = "oculto";
+  $endDate.className = "oculto";
+  //$contenedorTextoGenerado.className = "contenedor-textoGenerado-general";
+}
+
+function cambiarAColumnasILT() {
+  $coursesCompleted1.className = "oculto";
+  $coursesCurriculum.className = "oculto";
+  $coursesCompleted2.className = "oculto";
+
+  $startDate.className = "nombreColumnas";
+  $endDate.className = "nombreColumnas";
+
+  //$contenedorTextoGenerado.className = "contenedor-textoGenerado-ILT";
 }
 
 function cambiarTituloGeneral() {
