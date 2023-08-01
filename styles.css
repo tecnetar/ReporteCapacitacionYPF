@@ -10,6 +10,7 @@
     --fila-botones: repeat(5, 12vw);
     --ancho-fila-titulo-logos: repeat(2, 10vw) 50vw 20vw;
     --ancho-de-columnas: repeat(2, 10vw) 20vw 20vw repeat(3, 10vw);    
+    --ancho-de-columnas-ILT: repeat(2, 10vw) 20vw 20vw repeat(2, 15vw);
     --tipografia1: sans-serif;
     --fontSize-texto-generado: 1.2vw;
     --fontSize-nombreColumnas: 1.1vw;
@@ -92,6 +93,11 @@ h1 {
 .contenedor-textoGenerado-general {
     display: grid;
     grid-template-columns: var(--ancho-de-columnas);
+}
+
+.contenedor-textoGenerado-ILT {
+    display: grid;
+    grid-template-columns: var(--ancho-de-columnas2);
 }
 
 .panelConBorde {
