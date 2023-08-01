@@ -1,3 +1,4 @@
+const $contenedorNombreColumnas = document.getElementById("contenedor-nombreColumnas");
 const $contenedorTextoGenerado = document.getElementById("contenedor-textoGenerado");
 const $totalInscriptos = document.getElementById("totalInscriptos");
 const $alMenosUno = document.getElementById("alMenosUnCurso");
@@ -201,7 +202,9 @@ function cambiarAColumnasNormales() {
 
   $startDate.className = "oculto";
   $endDate.className = "oculto";
-  //$contenedorTextoGenerado.className = "contenedor-textoGenerado-general";
+
+  $contenedorNombreColumnas.className = "contenedor-nombreColumnas";
+  $contenedorTextoGenerado.className = "contenedor-textoGenerado-general";
 }
 
 function cambiarAColumnasILT() {
@@ -211,8 +214,9 @@ function cambiarAColumnasILT() {
 
   $startDate.className = "nombreColumnas";
   $endDate.className = "nombreColumnas";
-
-  //$contenedorTextoGenerado.className = "contenedor-textoGenerado-ILT";
+  
+  $contenedorNombreColumnas.className = "contenedor-nombreColumnas-ILT";
+  $contenedorTextoGenerado.className = "contenedor-textoGenerado-ILT";
 }
 
 function cambiarTituloGeneral() {
