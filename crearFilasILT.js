@@ -2,6 +2,7 @@
 
 function crearFilasILT(jsonFiltrado) {
     let contador = 0;
+    let nuevoCourseName = "";
 
     jsonFiltrado.forEach(element => {
         if (contador == 3) contador = 0;
@@ -40,8 +41,23 @@ function crearFilasILT(jsonFiltrado) {
 
 
         // Limpiar el texto del nombre de curricula
-        const regex1 = /ILA Group|ILA Argentina|[ - ]|Private /g;
-        const nuevoCourseName = element["Course Name"].replace(regex1, "");
+        const regex_iFixFundamentals = /Fundamentals/g;
+        const regex_iFixAdvanced = /Advanced/g;
+        const regex_Historian = /Historian/g;
+
+        if(regex_iFixFundamentals.test(element["Course Name"])) {
+            nuevoCourseName = "iFix Fundamentals";
+        }
+
+        if(regex_iFixAdvanced.test(element["Course Name"])) {
+            nuevoCourseName = "iFix Advanced";
+        }
+        
+        if(regex_Historian.test(element["Course Name"])) {
+            nuevoCourseName = "Historian Fundamentals";
+        }
+        
+        
 
         $firstName.innerText = element["First Name"];
         $lastName.innerText = element["Last name"];
