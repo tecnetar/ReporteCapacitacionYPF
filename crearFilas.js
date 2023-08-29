@@ -27,13 +27,13 @@ function crearFilas(jsonFiltrado, tipoDeReporte) {
         const $completed2 = document.createElement("div");
 
         // Asigno la clase a los contenedores de texto
-        $panelFirstName.className = "panelConBorde anchoCorto alturaBaja";
-        $panelLastName.className = "panelConBorde anchoCorto alturaBaja";
-        $panelEmail.className = "panelConBorde anchoLargo alturaBaja";
-        $panelCurriculum.className = "panelConBorde anchoLargo alturaBaja";
-        $panelCompleted1.className = "panelConBorde anchoCorto alturaBaja";
-        $panelCoursesInCurriculum.className = "panelConBorde anchoCorto alturaBaja";
-        $panelCompleted2.className = "panelConBorde anchoCorto alturaBaja";
+        $panelFirstName.className = "panelConBorde anchoUno alturaBaja";
+        $panelLastName.className = "panelConBorde anchoUno alturaBaja";
+        $panelEmail.className = "panelConBorde anchoDos alturaBaja";
+        $panelCurriculum.className = "panelConBorde anchoDos alturaBaja";
+        $panelCompleted1.className = "panelConBorde anchoUno alturaBaja";
+        $panelCoursesInCurriculum.className = "panelConBorde anchoUno alturaBaja";
+        $panelCompleted2.className = "panelConBorde anchoUno alturaBaja";
 
         // Asigno la clase a los textos
         $firstName.className = "textoGenerado";

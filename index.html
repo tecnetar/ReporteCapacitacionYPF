@@ -13,11 +13,12 @@
     <div id="contenedor-botones">
         <!-- <input type="file" id="file-input"> -->
     
-        <div id="buttonContainer" class="oculto">
+        <div id="buttonContainer">
             <button id="reporteGeneral" class="botonReporte">Reporte General</button>
             <button id="reporteFoundational" class="botonReporte">Reporte Foundational</button>
             <button id="reporteIntermediate" class="botonReporte">Reporte Intermediate</button>
             <button id="reporteAdvanced" class="botonReporte">Reporte Advanced</button>
+            <button id="reporteInstructor" class="botonReporte">Curso con Instructor</button>
         </div>
     </div>
     
@@ -30,14 +31,17 @@
             <img src="img/LogoYPF.png" class="logoYPF" alt="Logo de YPF">
         </div>
         
-        <div id="contenedor-nombreColumnas">
+        <div id="contenedor-nombreColumnas" class="contenedor-nombreColumnas">
             <div id="firstName" class="nombreColumnas">First Name</div>
             <div id="lastName" class="nombreColumnas">Last Name</div>
             <div id="email" class="nombreColumnas">Correo Electrónico</div>
             <div id="curriculum" class="nombreColumnas">Curriculum - iFIX & Historian</div>
-            <div id="coursesCompleted" class="nombreColumnas">Cursos Completados</div>
+            <div id="coursesCompleted1" class="nombreColumnas">Cursos Completados</div>
             <div id="coursesCurriculum" class="nombreColumnas">Cursos en curricula</div>
-            <div id="coursesCompleted" class="nombreColumnas">Cursos Completados (%)</div>
+            <div id="coursesCompleted2" class="nombreColumnas">Cursos Completados (%)</div>
+
+            <div id="startDate" class="oculto">Start Date</div>
+            <div id="endDate" class="oculto">End Date</div>
         </div>
 
         <div id="contenedor-textoGenerado" class="contenedor-textoGenerado-general"></div>
@@ -64,6 +68,7 @@
     <script src="./main.js"></script>
     <script src="./estadisticasGenerales.js"></script>
     <script src="./crearFilas.js"></script>
+    <script src="./crearFilasILT.js"></script>
     <script src="./GraficoDeBarras.js"></script>
     <script src="./GraficoDeTorta.js"></script>
     <script src="./reporte.json"></script>

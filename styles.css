@@ -2,12 +2,15 @@
     --ancho-tabla: 90vw;
     --ancho-uno: 10vw;
     --ancho-dos: 20vw;
+    --ancho-tres: 30vw;
     --altura-uno: 1.5vw;
     --altura-dos: 4.5vw;
     --borde-panel: 1px solid black;
     --borde-blanco: 1px solid white;
+    --fila-botones: repeat(5, 12vw);
     --ancho-fila-titulo-logos: repeat(2, 10vw) 50vw 20vw;
     --ancho-de-columnas: repeat(2, 10vw) 20vw 20vw repeat(3, 10vw);    
+    --ancho-de-columnas-ILT: repeat(2, 10vw) 30vw 20vw repeat(2, 10vw);
     --tipografia1: sans-serif;
     --fontSize-texto-generado: 1.2vw;
     --fontSize-nombreColumnas: 1.1vw;
@@ -38,10 +41,12 @@ h1 {
 }
 
 #contenedor-botones {
-    display:flex;
+    /* display:flex;
     flex-flow: row wrap;
+    justify-content: space-between;     */
     margin: auto;
-    justify-content: space-between;    
+    display: grid;
+    grid-template-columns: var(--fila-botones);
     width: var(--ancho-tabla);
 }
 
@@ -68,12 +73,19 @@ h1 {
     font-family: var(--tipografia1);
 }
 
-#contenedor-nombreColumnas {
-    /* position: relative; */
+.contenedor-nombreColumnas {
     display: grid;
     text-align: center;
     font-family: var(--tipografia1);
     grid-template-columns: var(--ancho-de-columnas);
+    background-color: #ccf;
+}
+
+.contenedor-nombreColumnas-ILT {
+    display: grid;
+    text-align: center;
+    font-family: var(--tipografia1);
+    grid-template-columns: var(--ancho-de-columnas-ILT);
     background-color: #ccf;
 }
 
@@ -88,6 +100,11 @@ h1 {
 .contenedor-textoGenerado-general {
     display: grid;
     grid-template-columns: var(--ancho-de-columnas);
+}
+
+.contenedor-textoGenerado-ILT {
+    display: grid;
+    grid-template-columns: var(--ancho-de-columnas-ILT);
 }
 
 .panelConBorde {
@@ -107,12 +124,16 @@ h1 {
     height: var(--altura-dos);
 }
 
-.anchoCorto {
+.anchoUno {
     width: var(--ancho-uno);
 }
 
-.anchoLargo {
+.anchoDos {
     width: var(--ancho-dos);
+}
+
+.anchoTres {
+    width: var(--ancho-tres);
 }
 
 .textoGenerado {
@@ -161,7 +182,8 @@ h1 {
     display:flex;
     flex-flow: row;
     justify-content: space-between;
-    width: 60vw;
+    /* width: var(--ancho-tabla); */
+    width: 70vw;
 }
 
 .botonReporte {
