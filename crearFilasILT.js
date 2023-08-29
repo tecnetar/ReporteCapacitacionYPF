@@ -26,8 +26,8 @@ function crearFilasILT(jsonFiltrado) {
         // Asigno la clase a los contenedores de texto
         $panelFirstName.className = "panelConBorde anchoUno alturaBaja";
         $panelLastName.className = "panelConBorde anchoUno alturaBaja";
-        $panelEmail.className = "panelConBorde anchoDos alturaBaja";
-        $panelCourseName.className = "panelConBorde anchoTres alturaBaja";
+        $panelEmail.className = "panelConBorde anchoTres alturaBaja";
+        $panelCourseName.className = "panelConBorde anchoDos alturaBaja";
         $panelStartDate.className = "panelConBorde anchoUno alturaBaja";
         $panelEndDate.className = "panelConBorde anchoUno alturaBaja";
 
