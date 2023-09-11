@@ -182,8 +182,8 @@ h1 {
     display:flex;
     flex-flow: row;
     justify-content: space-between;
-    /* width: var(--ancho-tabla); */
-    width: 70vw;
+    width: var(--ancho-tabla);
+    /* width: 70vw; */
 }
 
 .botonReporte {
@@ -199,6 +199,14 @@ h1 {
 
 .botonReporte:hover {
     background-color: #77f;
+}
+
+.botonBajarCSV {
+    background-color: #cfc;
+}
+
+.botonBajarCSV:hover {
+    background-color: #7f7; 
 }
 
 .graficoContainer {
