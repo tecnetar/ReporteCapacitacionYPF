@@ -21,6 +21,7 @@ const $reporteFoundational = document.getElementById("reporteFoundational");
 const $reporteIntermediate = document.getElementById("reporteIntermediate");
 const $reporteAdvanced = document.getElementById("reporteAdvanced");
 const $reporteInstructor = document.getElementById("reporteInstructor");
+const $exportarCSV = document.getElementById("exportarCSV");
 
 let jsonData;
 let filteredData;
@@ -73,7 +74,7 @@ fetch('reporte.json')
      filteredDataILT = filterNonYpfPeople(jsonDataILT);
      sortedDataILT = ordenarAlfabeticamente(filteredDataILT);
 
-    console.log(sortedDataILT);
+    // console.log(sortedDataILT);
   })
 
 function filterNonYpfPeople(argumento) {
@@ -157,6 +158,10 @@ $reporteInstructor.onclick = function () {
   // mostrarCanvasContainer();
   tipoDeReporte = "curriculaFiltrada";
   generarReporteILT(sortedDataILT);
+}
+
+$exportarCSV.onclick = function () {
+
 }
 
 function mostrarBotones() {
