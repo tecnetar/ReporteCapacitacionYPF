@@ -201,11 +201,11 @@ h1 {
     background-color: #77f;
 }
 
-.botonBajarCSV {
+.botonExportarCSV {
     background-color: #cfc;
 }
 
-.botonBajarCSV:hover {
+.botonExportarCSV:hover {
     background-color: #7f7; 
 }
 
