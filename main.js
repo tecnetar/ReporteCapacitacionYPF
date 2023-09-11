@@ -161,6 +161,7 @@ $reporteInstructor.onclick = function () {
 
 $exportarCSV.onclick = function () {
   pasarJSONaCSV();
+  exportarArchivo();
 }
 
 function mostrarBotones() {
