@@ -59,7 +59,6 @@ fetch('reporte.json')
     ocultarCanvasContainer();
     mostrarBotones();
     generarReporteGeneral(sortedData);
-
   })
 
 
@@ -161,7 +160,7 @@ $reporteInstructor.onclick = function () {
 }
 
 $exportarCSV.onclick = function () {
-
+  pasarJSONaCSV();
 }
 
 function mostrarBotones() {
