@@ -1,5 +1,5 @@
 let csv = [];
-let fileTitle = "reporteGenerado";
+let nombreDeArchivo = "Reporte de " + mesesArray[mesActual] + " " + anioActual;
 
 
 //Función de conversión de JSON a CSV
@@ -34,18 +34,18 @@ function pasarJSONaCSV() {
 
 // Función de exportado de CSV en navegador a un archivo en disco rígido
 function exportarArchivo() {
-    let exportedFilenmae = fileTitle + '.csv' || 'export.csv';
+    let nombreDearchivoExportado = nombreDeArchivo + '.csv' || 'export.csv';
 
     let blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
     if (navigator.msSaveBlob) { // IE 10+
-        navigator.msSaveBlob(blob, exportedFilenmae);
+        navigator.msSaveBlob(blob, nombreDearchivoExportado);
     } else {
         let link = document.createElement("a");
         if (link.download !== undefined) { // feature detection
-            // Browsers that support HTML5 download attribute
+            // Navegadores que soportan el atributo de descarga HTML5
             var url = URL.createObjectURL(blob);
             link.setAttribute("href", url);
-            link.setAttribute("download", exportedFilenmae);
+            link.setAttribute("download", nombreDearchivoExportado);
             link.style.visibility = 'hidden';
             document.body.appendChild(link);
             link.click();
