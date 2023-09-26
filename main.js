@@ -113,6 +113,7 @@ $reporteGeneral.onclick = function () {
   cambiarAColumnasNormales()
   tipoDeReporte = "ReporteGeneral";
   generarReporteGeneral(sortedData);
+  mostrarBotonDeExportarCSV();
 }
 
 $reporteFoundational.onclick = function () {
@@ -124,6 +125,7 @@ $reporteFoundational.onclick = function () {
   cambiarAColumnasNormales()
   tipoDeReporte = "curriculaFiltrada";
   generarReporteFoundational(sortedData);
+  ocultarBotonDeExportarCSV();
 }
 
 $reporteIntermediate.onclick = function () {
@@ -135,6 +137,7 @@ $reporteIntermediate.onclick = function () {
   cambiarAColumnasNormales()
   tipoDeReporte = "curriculaFiltrada";
   generarReporteIntermediate(sortedData);
+  ocultarBotonDeExportarCSV();
 }
 
 $reporteAdvanced.onclick = function () {
@@ -146,6 +149,7 @@ $reporteAdvanced.onclick = function () {
   cambiarAColumnasNormales()
   tipoDeReporte = "curriculaFiltrada";
   generarReporteAdvanced(sortedData);
+  ocultarBotonDeExportarCSV();
 }
 
 $reporteInstructor.onclick = function () {
@@ -153,10 +157,10 @@ $reporteInstructor.onclick = function () {
   borrarResultados();
   cambiarTituloInstructor();
   borrarCanvasAnterior();
-  cambiarAColumnasILT()
-  // mostrarCanvasContainer();
+  cambiarAColumnasILT();
   tipoDeReporte = "curriculaFiltrada";
   generarReporteILT(sortedDataILT);
+  ocultarBotonDeExportarCSV();
 }
 
 $exportarCSV.onclick = function () {
@@ -222,6 +226,14 @@ function cambiarAColumnasILT() {
   
   $contenedorNombreColumnas.className = "contenedor-nombreColumnas-ILT";
   $contenedorTextoGenerado.className = "contenedor-textoGenerado-ILT";
+}
+
+function mostrarBotonDeExportarCSV() {
+  $exportarCSV.className = "botonReporte botonExportarCSV";
+}
+
+function ocultarBotonDeExportarCSV() {
+  $exportarCSV.className = "botonReporte botonExportarCSV invisible";
 }
 
 function cambiarTituloGeneral() {
