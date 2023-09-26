@@ -149,7 +149,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
+    "Group Parent": "Customers",
     "Group Country": "AR"
   },
   {
@@ -370,7 +370,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "Customers",
+    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
     "Group Country": "AR"
   },
   {
@@ -387,7 +387,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "Customers",
+    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
     "Group Country": "AR"
   },
   {
@@ -404,7 +404,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "Customers",
+    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
     "Group Country": "AR"
   },
   {
@@ -591,7 +591,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "Customers",
+    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
     "Group Country": "AR"
   },
   {
@@ -772,7 +772,7 @@
     "Curriculum/Series Title": "YPF Tier 1 - iFIX & Historian (Foundational)",
     "Date Assigned": "2021-09-13",
     "Due Date": "N/A",
-    "Date Completed": "2023-06-05",
+    "Date Completed": "2023-05-02",
     "Completed Courses": "10",
     "Courses in Curriculum": "10",
     "% of Courses Completed": "100",
@@ -829,23 +829,6 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Country": "AR"
-  },
-  {
-    "First Name": "Nelson",
-    "Last name": "Gareca",
-    "Email": "nelson.f.gareca@ypf.com",
-    "Position Title": "Other (Cust)",
-    "Curriculum/Series Title": "YPF Tier 2 - iFIX & Historian (Intermediate)",
-    "Date Assigned": "2021-09-13",
-    "Due Date": "N/A",
-    "Date Completed": "N/A",
-    "Completed Courses": "",
-    "Courses in Curriculum": "9",
-    "% of Courses Completed": "",
-    "Status": "In Progress",
-    "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
     "Group Parent": "Customers",
     "Group Country": "AR"
   },
@@ -854,6 +837,23 @@
     "Last name": "Gareca",
     "Email": "nelson.f.gareca@ypf.com",
     "Position Title": "Other (Cust)",
+    "Curriculum/Series Title": "YPF Tier 2 - iFIX & Historian (Intermediate)",
+    "Date Assigned": "2021-09-13",
+    "Due Date": "N/A",
+    "Date Completed": "N/A",
+    "Completed Courses": "",
+    "Courses in Curriculum": "9",
+    "% of Courses Completed": "",
+    "Status": "In Progress",
+    "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
+    "Group Parent": "Customers",
+    "Group Country": "AR"
+  },
+  {
+    "First Name": "Nelson",
+    "Last name": "Gareca",
+    "Email": "nelson.f.gareca@ypf.com",
+    "Position Title": "Other (Cust)",
     "Curriculum/Series Title": "YPF Tier 3 - iFIX & Historian (Advanced)",
     "Date Assigned": "2021-09-13",
     "Due Date": "N/A",
@@ -948,7 +948,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF (T&C) - BUENOS AIRES - CSN 548453,YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
+    "Group Parent": "Customers",
     "Group Country": "AR"
   },
   {
@@ -965,7 +965,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF (T&C) - BUENOS AIRES - CSN 548453,YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "Customers",
+    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
     "Group Country": "AR"
   },
   {
@@ -982,7 +982,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "Customers",
+    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
     "Group Country": "AR"
   },
   {
@@ -1016,7 +1016,7 @@
     "% of Courses Completed": "25",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
+    "Group Parent": "Customers",
     "Group Country": "AR"
   },
   {
@@ -1033,7 +1033,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
+    "Group Parent": "Customers",
     "Group Country": "AR"
   },
   {
@@ -1186,7 +1186,7 @@
     "% of Courses Completed": "110",
     "Status": "Completed",
     "Group Name": "YPF (T&C) - BUENOS AIRES - CSN 548453,YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "Customers",
+    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
     "Group Country": "AR"
   },
   {
@@ -1220,7 +1220,7 @@
     "% of Courses Completed": "100",
     "Status": "Completed",
     "Group Name": "YPF (T&C) - BUENOS AIRES - CSN 548453,YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
+    "Group Parent": "Customers",
     "Group Country": "AR"
   },
   {
@@ -1254,7 +1254,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
+    "Group Parent": "Customers",
     "Group Country": "AR"
   },
   {
@@ -1288,7 +1288,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
+    "Group Parent": "Customers",
     "Group Country": "AR"
   },
   {
@@ -1458,7 +1458,7 @@
     "% of Courses Completed": "33",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
+    "Group Parent": "Customers",
     "Group Country": "AR"
   },
   {
@@ -1475,7 +1475,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "Customers",
+    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
     "Group Country": "AR"
   },
   {
@@ -1560,7 +1560,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "Customers",
+    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
     "Group Country": "AR"
   },
   {
@@ -1662,7 +1662,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500,YPF S.A.- BUENOS AIRES - CSN 19963100",
-    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
+    "Group Parent": "Customers",
     "Group Country": "AR"
   },
   {
@@ -1679,7 +1679,7 @@
     "% of Courses Completed": "25",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500,YPF S.A.- BUENOS AIRES - CSN 19963100",
-    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
+    "Group Parent": "Customers",
     "Group Country": "AR"
   },
   {
@@ -1798,7 +1798,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "Customers",
+    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
     "Group Country": "AR"
   },
   {
@@ -2053,7 +2053,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
+    "Group Parent": "Customers",
     "Group Country": "AR"
   },
   {
@@ -2070,7 +2070,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "Customers",
+    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
     "Group Country": "AR"
   },
   {
@@ -2240,7 +2240,7 @@
     "% of Courses Completed": "25",
     "Status": "In Progress",
     "Group Name": "Tecnet S.A. - BUENOS AIRES - CSN 20990900,YPF Advanced Proficy Curriculum",
-    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
+    "Group Parent": "GE Digital Distributor",
     "Group Country": "AR"
   },
   {
@@ -2404,13 +2404,13 @@
     "Curriculum/Series Title": "YPF Tier 1 - iFIX & Historian (Foundational)",
     "Date Assigned": "2021-09-13",
     "Due Date": "N/A",
-    "Date Completed": "2022-06-15",
+    "Date Completed": "2023-06-05",
     "Completed Courses": "11",
     "Courses in Curriculum": "10",
     "% of Courses Completed": "110",
     "Status": "Completed",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
+    "Group Parent": "Customers",
     "Group Country": "AR"
   },
   {
@@ -2546,7 +2546,7 @@
     "% of Courses Completed": "25",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "Customers",
+    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
     "Group Country": "AR"
   },
   {
@@ -2614,7 +2614,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "Tecnet S.A. - BUENOS AIRES - CSN 20990900,YPF Advanced Proficy Curriculum",
-    "Group Parent": "GE Digital Distributor",
+    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
     "Group Country": "AR"
   },
   {
@@ -2699,7 +2699,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
+    "Group Parent": "Customers",
     "Group Country": "AR"
   },
   {
@@ -2914,7 +2914,7 @@
     "Curriculum/Series Title": "YPF Tier 1 - iFIX & Historian (Foundational)",
     "Date Assigned": "2021-09-13",
     "Due Date": "N/A",
-    "Date Completed": "2023-01-05",
+    "Date Completed": "2023-06-05",
     "Completed Courses": "10",
     "Courses in Curriculum": "10",
     "% of Courses Completed": "100",
@@ -2954,7 +2954,7 @@
     "% of Courses Completed": "100",
     "Status": "Completed",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "Customers",
+    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
     "Group Country": "AR"
   },
   {
@@ -3039,7 +3039,7 @@
     "% of Courses Completed": "",
     "Status": "In Progress",
     "Group Name": "YPF Advanced Proficy Curriculum,YPF S.A. - BUENOS AIRES - CSN# 10914500",
-    "Group Parent": "Customers",
+    "Group Parent": "YPF S.A. - BUENOS AIRES - CSN# 10914500",
     "Group Country": "AR"
   },
   {
