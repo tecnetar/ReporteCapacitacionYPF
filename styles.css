@@ -149,6 +149,10 @@ h1 {
     display: none;
 }
 
+.invisible {
+    visibility: hidden;
+}
+
 #tablaDeResultados {
     display: grid;
     position: relative;
